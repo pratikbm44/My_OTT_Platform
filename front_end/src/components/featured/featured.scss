@@ -1,0 +1,62 @@
+.category{
+    position: absolute;
+    font-size: 30px;
+    top: 80px;
+    left: 50px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    select{
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        margin-left: 20px;
+        padding: 5px;
+    }
+}
+
+.info {
+    width: 30%;
+    position: absolute;
+    left: 57%;
+    bottom: 37%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    .desc {
+        font-size: 17px;
+        margin-bottom: 31px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+              margin-right: 13px;
+              font-size: 18px;
+              font-weight: 500;
+            
+        &.play {
+            background-color: white;
+            color: black;
+        }
+        &.more {
+            background-color: gray;
+            color: white;
+        }
+        span {
+            margin-left: 5px;
+        }
+    }
+    }
+}

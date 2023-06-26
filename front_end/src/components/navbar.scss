@@ -1,0 +1,77 @@
+.navbar {
+    color: rgb(253, 249, 249);                                      //navbar text color
+    height: 78px;                                       //height 
+    position: fixed;                                        //used for elements stays in fix place
+    background-color: var(--main-color);                                        //navbar backgorund color
+   width: 100%;                                                 //width of navbar
+    top: 0;
+    z-index: 999;
+}
+
+.container {
+  //  padding: -1px 50px;
+    display: flex;                                           //for display in a row
+   // align-items: center;
+    justify-content: space-between;                         //space between left and right class
+
+    
+
+    .left {
+        display: flex;                               //for display left side of navbar in a row
+        align-items: center;                                //to display names in center of navbar
+
+        img {
+           height: 70px;                                //height of logo
+            margin-right: 40px;                         //for specific gap in names and images
+
+        }
+
+        h3 {
+            margin-right: 20px;                         //for specific gap between names
+           // align-items: center;
+        }
+    }
+
+    .right {
+        display: flex;                                  //for display right side of navbar in a row
+        align-items: center;                            //to display names in center of navbar
+       //border-right-width: 58px;
+        margin-right: 4rem;                              //specific gap form rigth side 
+
+        .icon {
+           margin: 0px 24px;                                //specific gap between icons
+            cursor: pointer;                               //pointer display if mouse goes on element
+        }
+
+        img {
+            border-radius: 30px;                            //used for profile picture in circular shape
+            height: 30px;                                   //height of profile picture
+            width: 30px;                                    //width of profile picture
+        //    object-fit: cover;                             
+            cursor: pointer;
+        }
+
+        .profile {
+           // border-right-width: 75px;
+            //   border-right-style: dotted;
+            .options {
+                display: none;                              //for nothing to display in dropdown menu
+            }
+
+            &:hover {                                       //hover to the elements
+                .options {  
+                    display: flex;
+                    flex-direction: column;                     //options display in coloumns
+                    position: absolute;
+                    background-color: var(--main-color);
+                    border-radius: 5px;
+                }
+
+                span {
+                   padding: 5px;                            //padding of options
+                    cursor: pointer;                        //if mouse goes on this options then it is pointer
+                }
+            }
+        }
+    }
+}
