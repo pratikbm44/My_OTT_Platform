@@ -1,5 +1,8 @@
 # My_OTT_Platform
 
+I am developing OTT Platform which is similar to NETFLIX, AMAZON PRIME, HOTSTAR etc. using MERN Stack. On which we will able to view various types of movies and Series.
+
+
 Here is Sign up page :-
 
 ![Screenshot (66)](https://github.com/pratikbm44/My_OTT_Platform/assets/96280945/fda7d3e2-a525-48aa-8891-08c799383e50)
